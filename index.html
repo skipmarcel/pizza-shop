@@ -5,12 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Shop</title>
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <form>
-      <label for="olives">olives</label>
-      <input id="olives" type="checkbox" value="olives" />
+      <div id="sizeChoices">
+        <h2>Chosse Your Size</h2>
+
+        <div>
+          <input id="small" type="radio" name="sizes" value="small" />
+          <label>Small</label>
+        </div>
+
+        <div>
+          <input type="radio" name="sizes" value="medium" />
+          <label>Medium</label>
+        </div>
+
+        <div>
+          <input type="radio" name="sizes" value="large" />
+          <label>Large</label>
+        </div>
+      </div>
+      <div id="toppingsDiv">
+        <h2>Choose Your Toppings</h2>
+        <div>
+          <input id="pepperoni" type="checkbox" value="pepperoni" />
+          <label for="pepperoni">pepperoni</label>
+        </div>
+        <div>
+          <input id="sausage" type="checkbox" value="sausage" />
+          <label for="sausage">sausage</label>
+        </div>
+        <div>
+          <input id="ham" type="checkbox" value="ham" />
+          <label for="ham">ham</label>
+        </div>
+        <div>
+          <input id="salami" type="checkbox" value="salami" />
+          <label for="salami">salami</label>
+        </div>
+        <div>
+          <input id="olives" type="checkbox" value="olives" />
+          <label for="olives">olives</label>
+        </div>
+      </div>
       <button type="submit" id="orderBtn">Order</button>
     </form>
     <script src="js/scripts.js"></script>

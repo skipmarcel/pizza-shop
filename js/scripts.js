@@ -20,16 +20,18 @@ Pizza.prototype.getPrice = function () {
 };
 
 let newOrder = new Pizza("", []);
-console.log(newOrder);
 
 const orderBtn = document.getElementById("orderBtn");
 const olivesCheckbox = document.getElementById("olives");
+const smallRadio = document.getElementById("small");
 
 orderBtn.addEventListener("click", (event) => {
   event.preventDefault();
   if (olivesCheckbox.checked) {
     newOrder.toppings.push("olives");
   }
+  if (smallRadio.checked) {
+    newOrder.size = "small";
+  }
 });
-
 console.log(newOrder);

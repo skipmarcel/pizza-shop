@@ -1,0 +1,9 @@
+#sizeChoices {
+  display: flex;
+  flex-direction: column;
+}
+
+#toppingsDiv {
+  display: flex;
+  flex-direction: column;
+}
