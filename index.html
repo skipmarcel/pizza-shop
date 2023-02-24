@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <form>
+    <form id="orderForm">
       <div id="sizeChoices">
         <h2>Chosse Your Size</h2>
 
@@ -19,12 +19,12 @@
         </div>
 
         <div>
-          <input type="radio" name="sizes" value="medium" />
+          <input id="medium" type="radio" name="sizes" value="medium" />
           <label>Medium</label>
         </div>
 
         <div>
-          <input type="radio" name="sizes" value="large" />
+          <input id="large" type="radio" name="sizes" value="large" />
           <label>Large</label>
         </div>
       </div>
@@ -49,6 +49,26 @@
         <div>
           <input id="olives" type="checkbox" value="olives" />
           <label for="olives">olives</label>
+        </div>
+        <div>
+          <input id="onions" type="checkbox" value="onions" />
+          <label for="onions">onions</label>
+        </div>
+        <div>
+          <input id="bell pepper" type="checkbox" value="bell pepper" />
+          <label for="bell pepper">bell pepper</label>
+        </div>
+        <div>
+          <input id="pineapple" type="checkbox" value="pineapple" />
+          <label for="pineapple">pineapple</label>
+        </div>
+        <div>
+          <input id="mushroom" type="checkbox" value="mushroom" />
+          <label for="mushroom">mushroom</label>
+        </div>
+        <div>
+          <input id="anchovies" type="checkbox" value="anchovies" />
+          <label for="anchovies">anchovies</label>
         </div>
       </div>
       <button type="submit" id="orderBtn">Order</button>

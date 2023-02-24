@@ -19,19 +19,37 @@ Pizza.prototype.getPrice = function () {
   return totalPrice;
 };
 
+function resetForm() {
+  document.getElementById("orderForm").reset();
+}
+
 let newOrder = new Pizza("", []);
 
 const orderBtn = document.getElementById("orderBtn");
-const olivesCheckbox = document.getElementById("olives");
 const smallRadio = document.getElementById("small");
+const mediumRadio = document.getElementById("medium");
+const largeRadio = document.getElementById("large");
 
 orderBtn.addEventListener("click", (event) => {
   event.preventDefault();
-  if (olivesCheckbox.checked) {
-    newOrder.toppings.push("olives");
-  }
   if (smallRadio.checked) {
     newOrder.size = "small";
   }
+  if (mediumRadio.checked) {
+    newOrder.size = "meduim";
+  }
+  if (largeRadio.checked) {
+    newOrder.size = "large";
+  }
+  const toppingsCheckbox = document.querySelectorAll(
+    'input[type="checkbox"]:checked'
+  );
+  if (toppingsCheckbox.length > 0) {
+    toppingsCheckbox.forEach((checkbox) => {
+      newOrder.toppings.push(checkbox.value);
+    });
+  }
+
+  resetForm();
 });
 console.log(newOrder);
