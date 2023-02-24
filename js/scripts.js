@@ -1,3 +1,4 @@
+//Business Logic
 function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
@@ -18,5 +19,17 @@ Pizza.prototype.getPrice = function () {
   return totalPrice;
 };
 
-const newOrder = new Pizza("medium", ["olives", "sausage", "bell pepper"]);
-console.log(newOrder.getPrice());
+let newOrder = new Pizza("", []);
+console.log(newOrder);
+
+const orderBtn = document.getElementById("orderBtn");
+const olivesCheckbox = document.getElementById("olives");
+
+orderBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (olivesCheckbox.checked) {
+    newOrder.toppings.push("olives");
+  }
+});
+
+console.log(newOrder);
