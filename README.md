@@ -33,7 +33,13 @@ _Describe: Pizza()_
 
 \_Test: "It should return a Pizza object with two properties for size and toppings"
 \_Code: const pizzaOrder = new Pizza(["medium", ["olives", "sausage", "bell pepper"]);
-\_Expected Output: Pizza { size: "medium" toppings: "olives", "sausage", "bell pepper"] };
+\_Expected Output: Pizza { size: "medium" toppings: ["olives", "sausage", "bell pepper"] };
+
+_Describe: prototype.getPrice_
+
+\_Test: "It should calculate the cost of the pizza according to size and number of toppings"
+\_Code: const newOrder = new Pizza("medium", ["olives", "sausage", "bell pepper"]);
+\_Expected Output: 19.5 (medium pizza with 3 toppings)
 
 ## License
 
