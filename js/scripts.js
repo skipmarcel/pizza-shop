@@ -29,6 +29,7 @@ const orderBtn = document.getElementById("orderBtn");
 const smallRadio = document.getElementById("small");
 const mediumRadio = document.getElementById("medium");
 const largeRadio = document.getElementById("large");
+let orderInfo = document.getElementById("orederInfo");
 
 orderBtn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -49,7 +50,14 @@ orderBtn.addEventListener("click", (event) => {
       newOrder.toppings.push(checkbox.value);
     });
   }
-
+  document.getElementById("orderInfo").innerHTML =
+    " One " + "<strong>" + newOrder.size + "</strong>" + " pizza " + "with:";
+  let toppingsOl = document.createElement("ol");
+  for (let i = 0; i < newOrder.toppings.length; i++) {
+    let toppingsLi = document.createElement("li");
+    toppingsLi.innerText = newOrder.toppings[i];
+    toppingsOl.appendChild(toppingsLi);
+  }
+  document.getElementById("orderInfo").appendChild(toppingsOl);
   resetForm();
 });
-console.log(newOrder);
