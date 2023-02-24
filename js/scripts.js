@@ -16,7 +16,10 @@ Pizza.prototype.getPrice = function () {
   const numToppings = this.toppings.length;
   const toppingCost = numToppings * toppingPrice;
   const totalPrice = basePrice * sizeMultiplier + toppingCost;
-  return totalPrice;
+  let total = document.createElement("p");
+  total.innerHTML =
+    "Your total is $" + "<strong>" + totalPrice.toFixed(2) + "</strong>";
+  costButton.after(total);
 };
 
 function resetForm() {
@@ -30,6 +33,13 @@ const smallRadio = document.getElementById("small");
 const mediumRadio = document.getElementById("medium");
 const largeRadio = document.getElementById("large");
 let orderInfo = document.getElementById("orederInfo");
+
+const costButton = document.getElementById("cost");
+costButton.addEventListener("click", (event) => {
+  newOrder.getPrice();
+});
+
+//UI logic
 
 orderBtn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -59,5 +69,6 @@ orderBtn.addEventListener("click", (event) => {
     toppingsOl.appendChild(toppingsLi);
   }
   document.getElementById("orderInfo").appendChild(toppingsOl);
+  document.getElementById("cost").removeAttribute("class");
   resetForm();
 });
