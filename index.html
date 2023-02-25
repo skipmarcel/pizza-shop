@@ -6,79 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Shop</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script:wght@400;700&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <form id="orderForm">
-      <div id="sizeChoices">
-        <h2>Choose Your Size</h2>
-
-        <div>
-          <input id="small" type="radio" name="sizes" value="small" />
-          <label>Small</label>
-        </div>
-
-        <div>
-          <input id="medium" type="radio" name="sizes" value="medium" />
-          <label>Medium</label>
-        </div>
-
-        <div>
-          <input id="large" type="radio" name="sizes" value="large" />
-          <label>Large</label>
-        </div>
-      </div>
-      <div id="toppingsDiv">
-        <h2>Choose Your Toppings</h2>
-        <div>
-          <input id="pepperoni" type="checkbox" value="pepperoni" />
-          <label for="pepperoni">pepperoni</label>
-        </div>
-        <div>
-          <input id="sausage" type="checkbox" value="sausage" />
-          <label for="sausage">sausage</label>
-        </div>
-        <div>
-          <input id="ham" type="checkbox" value="ham" />
-          <label for="ham">ham</label>
-        </div>
-        <div>
-          <input id="salami" type="checkbox" value="salami" />
-          <label for="salami">salami</label>
-        </div>
-        <div>
-          <input id="olives" type="checkbox" value="olives" />
-          <label for="olives">olives</label>
-        </div>
-        <div>
-          <input id="onions" type="checkbox" value="onions" />
-          <label for="onions">onions</label>
-        </div>
-        <div>
-          <input id="bell pepper" type="checkbox" value="bell pepper" />
-          <label for="bell pepper">bell pepper</label>
-        </div>
-        <div>
-          <input id="pineapple" type="checkbox" value="pineapple" />
-          <label for="pineapple">pineapple</label>
-        </div>
-        <div>
-          <input id="mushroom" type="checkbox" value="mushroom" />
-          <label for="mushroom">mushroom</label>
-        </div>
-        <div>
-          <input id="anchovies" type="checkbox" value="anchovies" />
-          <label for="anchovies">anchovies</label>
-        </div>
-      </div>
-      <button type="submit" id="orderBtn">Order</button>
-    </form>
-
-    <div id="currentOrder">
-      <h3>Your current order:</h3>
-      <span id="orderInfo"></span>
+    <div id="titleDiv">
+      <div><h1>BARNIE'S PIZZA CAVE</h1></div>
     </div>
-    <button type="button" id="cost" class="costHide">Your Cost</button>
+
+    <div id="formDiv">
+      <form id="orderForm">
+        <div id="sizeChoices">
+          <h2>Choose Your Size</h2>
+
+          <div>
+            <input id="small" type="radio" name="sizes" value="small" />
+            <label>Small</label>
+          </div>
+
+          <div>
+            <input id="medium" type="radio" name="sizes" value="medium" />
+            <label>Medium</label>
+          </div>
+
+          <div>
+            <input id="large" type="radio" name="sizes" value="large" />
+            <label>Large</label>
+          </div>
+        </div>
+        <div id="toppingsDiv">
+          <h2>Choose Your Toppings</h2>
+          <div>
+            <input id="pepperoni" type="checkbox" value="pepperoni" />
+            <label for="pepperoni">pepperoni</label>
+          </div>
+          <div>
+            <input id="sausage" type="checkbox" value="sausage" />
+            <label for="sausage">sausage</label>
+          </div>
+          <div>
+            <input id="ham" type="checkbox" value="ham" />
+            <label for="ham">ham</label>
+          </div>
+          <div>
+            <input id="salami" type="checkbox" value="salami" />
+            <label for="salami">salami</label>
+          </div>
+          <div>
+            <input id="olives" type="checkbox" value="olives" />
+            <label for="olives">olives</label>
+          </div>
+          <div>
+            <input id="onions" type="checkbox" value="onions" />
+            <label for="onions">onions</label>
+          </div>
+          <div>
+            <input id="bell pepper" type="checkbox" value="bell pepper" />
+            <label for="bell pepper">bell pepper</label>
+          </div>
+          <div>
+            <input id="pineapple" type="checkbox" value="pineapple" />
+            <label for="pineapple">pineapple</label>
+          </div>
+          <div>
+            <input id="mushroom" type="checkbox" value="mushroom" />
+            <label for="mushroom">mushroom</label>
+          </div>
+          <div>
+            <input id="anchovies" type="checkbox" value="anchovies" />
+            <label for="anchovies">anchovies</label>
+          </div>
+        </div>
+        <button type="submit" id="orderBtn">Order</button>
+      </form>
+
+      <div id="currentOrder">
+        <h2>Your current order:</h2>
+        <span id="orderInfo"></span>
+      </div>
+      <button type="button" id="cost" class="costHide">Your Total</button>
+    </div>
     <script src="js/scripts.js"></script>
   </body>
 </html>

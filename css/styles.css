@@ -1,3 +1,40 @@
+* {
+  font-family: "Comfortaa", cursive;
+}
+
+body {
+  background-image: url(/images/table.png);
+}
+
+#titleDiv {
+  display: flex;
+  background-color: white;
+  color: darkred;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin: 30px 30px 10px 30px;
+  padding: 0;
+  box-shadow: 4px 4px 5px rgba(67, 26, 2, 0.9);
+}
+
+#titleDiv > div {
+  padding: 0;
+}
+
+#formDiv {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  margin: 20px 280px 8px 280px;
+  border-radius: 40px;
+  box-shadow: 4px 4px 5px rgba(67, 26, 2, 0.9);
+  height: 760px;
+}
+
 #sizeChoices {
   display: flex;
   flex-direction: column;
@@ -15,4 +52,14 @@
 
 .costHide {
   visibility: hidden;
+}
+
+h1 {
+  font-family: "Tilt Prism", cursive;
+  font-size: 80px;
+  margin: 4px;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
 }
