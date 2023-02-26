@@ -26,18 +26,28 @@ body {
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   width: auto;
   margin: 20px 280px 8px 280px;
   border-radius: 40px;
   box-shadow: 4px 4px 5px rgba(67, 26, 2, 0.9);
-  height: 760px;
+  height: 900px;
+  padding-top: 0px;
+}
+
+#orderFormTitle {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-top: 0;
 }
 
 #sizeChoices {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 #toppingsDiv {
@@ -54,6 +64,11 @@ body {
   visibility: hidden;
 }
 
+#cost {
+  margin-right: 135px;
+  margin-top: 0;
+}
+
 h1 {
   font-family: "Tilt Prism", cursive;
   font-size: 80px;
@@ -62,4 +77,19 @@ h1 {
 
 h2 {
   font-family: "Dancing Script", cursive;
+}
+
+button {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: brown;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+}
+
+.anotherOrderButton {
+  visibility: hidden;
 }

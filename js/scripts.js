@@ -34,12 +34,12 @@ const mediumRadio = document.getElementById("medium");
 const largeRadio = document.getElementById("large");
 let orderInfo = document.getElementById("orederInfo");
 
+//UI logic
 const costButton = document.getElementById("cost");
 costButton.addEventListener("click", (event) => {
   newOrder.getPrice();
+  document.getElementById("orderAnother").removeAttribute("class");
 });
-
-//UI logic
 
 orderBtn.addEventListener("click", (event) => {
   event.preventDefault();
