@@ -2,9 +2,9 @@
   font-family: "Comfortaa", cursive;
 }
 
-body {
-  background-image: url(/images/table.jpeg);
-}
+/* body {
+  background-image: url(images/table.jpg);
+} */
 
 #titleDiv {
   display: flex;
