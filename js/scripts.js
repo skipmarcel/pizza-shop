@@ -36,6 +36,7 @@ let orderInfo = document.getElementById("orederInfo");
 
 //UI logic
 const costButton = document.getElementById("cost");
+
 costButton.addEventListener("click", (event) => {
   newOrder.getPrice();
   document.getElementById("orderAnother").removeAttribute("class");

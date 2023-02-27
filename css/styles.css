@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(/images/table.png);
+  background-image: url(/images/table.jpeg);
 }
 
 #titleDiv {
@@ -88,6 +88,18 @@ button {
   color: white;
   border: none;
   padding: 5px 8px;
+  box-shadow: 2px 3px rgba(67, 26, 2, 0.9);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(94, 37, 4, 0.9);
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
 }
 
 .anotherOrderButton {
